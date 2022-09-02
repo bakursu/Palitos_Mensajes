@@ -7,4 +7,13 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+<!--    mis colores-->
+    <color name="crema">#D8D9D7</color>
+    <color name="marron_1">#59402A</color>
+    <color name="marron_2">#8C6645</color>
+    <color name="marron_3">#A68568</color>
+    <color name="blackm">#0D0000</color>
+    <color name="acento_1">#F2D541</color>
+    <color name="acento_2">#BF8A26</color>
 </resources>
