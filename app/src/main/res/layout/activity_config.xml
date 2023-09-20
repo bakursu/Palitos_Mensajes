@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ realizado por palitodev Jose Rios
+  ~ correo jdrios.c7@gmail.com
+  ~  21/09/22 12:37
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".otros.ConfigActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/IV_config_perfil"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="@dimen/fab8"
+        app:civ_border_color="@color/verde_1"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars"
+
+        />
+
+    <Button
+        android:id="@+id/Btn_config_foto_perfil"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="@dimen/fab8"
+        android:background="@drawable/imagen_perfil"
+        android:text="selecciona una foto"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TV_config_user"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="usuario"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IV_config_perfil" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TV_config_user">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/ET_config_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ingrese aqui su nuevo nombre de usuario"
+                android:inputType="textPersonName"
+                android:textAlignment="center" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <Button
+                android:id="@+id/Btn_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fab8"
+                android:layout_marginRight="@dimen/fab8"
+                android:background="@drawable/rounded_btn"
+                android:elevation="@dimen/fab8"
+                android:text="actualizar informacion" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fab8"
+                android:layout_marginRight="@dimen/fab8"
+                android:background="@drawable/rounded_btn_white"
+                android:elevation="@dimen/fab8"
+                android:text="Borrar mis datos de esta app" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <Button
+                android:id="@+id/Btn_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/fab8"
+                android:layout_marginRight="@dimen/fab8"
+                android:layout_marginBottom="@dimen/fab8"
+                android:background="@drawable/rounded_btn_white"
+                android:elevation="@dimen/fab8"
+                android:text="info de la app" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

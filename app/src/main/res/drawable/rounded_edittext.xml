@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ realizado por palitodev Jose Rios
+  ~ correo jdrios.c7@gmail.com
+  ~  21/09/22 12:37
+  -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="25dp"/>
+    <solid android:color="@color/white"/>
+
+
+</shape>

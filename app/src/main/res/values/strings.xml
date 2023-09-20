@@ -1,3 +1,9 @@
+<!--
+  ~ realizado por palitodev Jose Rios
+  ~ correo jdrios.c7@gmail.com
+  ~  21/09/22 12:37
+  -->
+
 <resources>
     <string name="app_name">Palitos Mensajes</string>
     <string name="correo">Correo</string>
@@ -6,4 +12,5 @@
     <string name="confimPass">Confirmar contraseña</string>
     <string name="goLogin">ya tienes una cuenta?</string>
     <string name="GotoRegister">Aun no tienes una cuenta?</string>
+    <string name="autor">Jose David Rios (Palito)</string>
 </resources>

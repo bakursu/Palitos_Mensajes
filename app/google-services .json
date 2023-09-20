@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "377236347958",
+    "firebase_url": "https://palitos-mensajes-default-rtdb.firebaseio.com",
+    "project_id": "palitos-mensajes",
+    "storage_bucket": "palitos-mensajes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:377236347958:android:c46c2a6949794734bccc97",
+        "android_client_info": {
+          "package_name": "com.bakursu.palitosmensajes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "377236347958-pfuikg71cjjqsud8o13kq34dh87n0pnc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bakursu.palitosmensajes",
+            "certificate_hash": "726125e08df4fd6299403c60f39cb29953981390"
+          }
+        },
+        {
+          "client_id": "377236347958-aqce1d03b4ps4i6e2rkv2jatkstju3cf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjj71Rni5BGni_1pr-FJZCbZ-Ls64N0rM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "377236347958-aqce1d03b4ps4i6e2rkv2jatkstju3cf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

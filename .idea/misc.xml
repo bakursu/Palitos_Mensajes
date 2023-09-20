@@ -3,8 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Admin/AndroidStudioProjects/PalitosMensajes/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/.gradle/caches/transforms-3/e7880a14fa612b4f4e78a60c9f9e1c49/transformed/play-services-base-18.0.1/res/drawable/common_google_signin_btn_icon_light_normal.xml" value="0.231" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PalitosMensajes/app/src/main/res/drawable/imagen_perfil.xml" value="0.138" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PalitosMensajes/app/src/main/res/drawable/rounded_btn.xml" value="0.138" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PalitosMensajes/app/src/main/res/drawable/rounded_btn_white.xml" value="0.231" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PalitosMensajes/app/src/main/res/drawable/rounded_edittext.xml" value="0.138" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PalitosMensajes/app/src/main/res/drawable/rv_chat_from.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PalitosMensajes/app/src/main/res/drawable/splash_screen.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PalitosMensajes/app/src/main/res/layout/activity_chat_log.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PalitosMensajes/app/src/main/res/layout/activity_config.xml" value="0.33" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PalitosMensajes/app/src/main/res/layout/activity_info.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PalitosMensajes/app/src/main/res/layout/activity_login.xml" value="0.2" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/PalitosMensajes/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PalitosMensajes/app/src/main/res/layout/activity_mensajes.xml" value="0.22" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PalitosMensajes/app/src/main/res/layout/activity_new_mensajes.xml" value="0.18" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PalitosMensajes/app/src/main/res/layout/activity_register.xml" value="0.22" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PalitosMensajes/app/src/main/res/layout/rv_chat_from.xml" value="0.33" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PalitosMensajes/app/src/main/res/layout/rv_chat_to.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PalitosMensajes/app/src/main/res/layout/rv_last_mensajes.xml" value="0.33" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PalitosMensajes/app/src/main/res/layout/rv_new_mensaje.xml" value="0.18" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/PalitosMensajes/app/src/main/res/menu/nav_menu.xml" value="0.18" />
       </map>
     </option>
   </component>

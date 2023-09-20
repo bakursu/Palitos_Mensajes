@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ realizado por palitodev Jose Rios
+  ~ correo jdrios.c7@gmail.com
+  ~  21/09/22 12:37
+  -->
+
 <resources>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
@@ -9,6 +15,7 @@
     <color name="white">#FFFFFFFF</color>
 
 <!--    mis colores-->
+    <color name="obscurecer">#8D000000</color>
     <color name="crema">#D8D9D7</color>
     <color name="marron_1">#59402A</color>
     <color name="marron_2">#8C6645</color>
@@ -16,4 +23,5 @@
     <color name="blackm">#0D0000</color>
     <color name="acento_1">#F2D541</color>
     <color name="acento_2">#BF8A26</color>
+    <color name="verde_1">#47A51F</color>
 </resources>

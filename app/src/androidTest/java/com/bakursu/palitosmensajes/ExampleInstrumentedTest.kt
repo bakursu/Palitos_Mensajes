@@ -1,3 +1,9 @@
+/*
+ * realizado por palitodev Jose Rios
+ * correo jdrios.c7@gmail.com
+ *  21/09/22 12:37
+ */
+
 package com.bakursu.palitosmensajes
 
 import androidx.test.platform.app.InstrumentationRegistry

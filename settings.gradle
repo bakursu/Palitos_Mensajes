@@ -1,3 +1,9 @@
+/*
+ * realizado por palitodev Jose Rios
+ * correo jdrios.c7@gmail.com
+ *  21/09/22 12:37
+ */
+
 pluginManagement {
     repositories {
         gradlePluginPortal()
@@ -10,6 +16,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url "https://jitpack.io" }
     }
 }
 rootProject.name = "Palitos Mensajes"

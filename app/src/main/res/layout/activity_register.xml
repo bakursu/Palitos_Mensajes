@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ realizado por palitodev Jose Rios
+  ~ correo jdrios.c7@gmail.com
+  ~  21/09/22 12:37
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/background_tree"
+    android:backgroundTint="#8D000000"
+    android:backgroundTintMode="src_over"
+    android:theme="@style/test"
+
+    >
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/usuario"
+        android:layout_margin="@dimen/fab8"
+        app:layout_constraintBottom_toTopOf="@+id/ET_usuario"
+        app:layout_constraintStart_toStartOf="@+id/guideline3" />
+
+    <EditText
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/fab8"
+        android:padding="@dimen/fab8"
+        android:id="@+id/ET_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/usuario"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/rounded_edittext"/>
+
+    <TextView
+        android:layout_margin="@dimen/fab8"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/correo"
+        app:layout_constraintTop_toBottomOf="@+id/ET_usuario"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        />
+
+    <EditText
+        android:textColor="@color/black"
+        android:padding="@dimen/fab8"
+        android:hint="@string/correo"
+        android:layout_margin="@dimen/fab8"
+        android:id="@+id/ET_correo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:background="@drawable/rounded_edittext"/>
+
+    <TextView
+        android:id="@+id/TVPassword"
+        android:layout_margin="@dimen/fab8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contrasena"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/ET_correo" />
+
+    <EditText
+        android:textColor="@color/black"
+        android:padding="@dimen/fab8"
+        android:layout_margin="@dimen/fab8"
+        android:id="@+id/ET_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/contrasena"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVPassword"
+        android:background="@drawable/rounded_edittext"/>
+
+    <TextView
+        android:layout_margin="@dimen/fab8"
+        android:id="@+id/TVConfirmPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confimPass"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/ET_password" />
+
+    <EditText
+        android:textColor="@color/black"
+        android:padding="@dimen/fab8"
+        android:layout_margin="@dimen/fab8"
+        android:id="@+id/ET_confirmPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/confimPass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVConfirmPass"
+        android:background="@drawable/rounded_edittext"/>
+
+    <Button
+        android:id="@+id/BtnRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_btn"
+        android:text="Registrate"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="@+id/ET_confirmPass"
+        app:layout_constraintStart_toStartOf="@+id/ET_confirmPass" />
+
+    <TextView
+        android:id="@+id/BtnGoLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="@string/goLogin"
+        app:layout_constraintEnd_toEndOf="@+id/BtnRegister"
+        app:layout_constraintStart_toStartOf="@+id/BtnRegister"
+        app:layout_constraintTop_toBottomOf="@+id/BtnRegister" />
+
+    <Button
+        android:textSize="16dp"
+        android:id="@+id/Btn_fotoPerfil"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="selecciona una foto"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/imagen_perfil"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/IVPerfil"
+        app:civ_border_color="@color/acento_2"
+        app:civ_border_width="2dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Btn_fotoPerfil"
+        app:layout_constraintEnd_toEndOf="@+id/Btn_fotoPerfil"
+        app:layout_constraintStart_toStartOf="@+id/Btn_fotoPerfil"
+        app:layout_constraintTop_toTopOf="@+id/Btn_fotoPerfil" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

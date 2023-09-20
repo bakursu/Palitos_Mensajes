@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ realizado por palitodev Jose Rios
+  ~ correo jdrios.c7@gmail.com
+  ~  21/09/22 12:37
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/menu_NewMensaje"
+        android:icon="@drawable/configuraciones"
+        android:title="Configuraciom"
+        app:showAsAction="ifRoom"
+        android:iconTint="@color/white"
+
+        />
+    <item
+        android:id="@+id/menu_Sign_Out"
+        android:icon="@drawable/cerrar_sesion"
+        android:title="Cerrar Sesion"
+        app:showAsAction="ifRoom"
+        android:iconTint="@color/white"
+        />
+</menu>

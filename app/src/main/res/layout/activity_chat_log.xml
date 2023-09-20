@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ realizado por palitodev Jose Rios
+  ~ correo jdrios.c7@gmail.com
+  ~  21/09/22 12:37
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chat.ChatLogActivity">
+
+    <EditText
+        android:id="@+id/ET_SendMensaje"
+        android:layout_width="0dp"
+        android:layout_height="60sp"
+        android:inputType="textPersonName"
+        android:hint="Mensaje"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Btn_enviar"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <Button
+        android:id="@+id/Btn_enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="60sp"
+        android:text="Enviar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/rounded_btn"
+        android:textStyle="normal"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RV_ChatLog"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/chat_fondo"
+        android:backgroundTint="@color/obscurecer"
+        android:backgroundTintMode="src_over"
+        app:layout_constraintBottom_toTopOf="@+id/ET_SendMensaje"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/rv_chat_to"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

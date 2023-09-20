@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ realizado por palitodev Jose Rios
+  ~ correo jdrios.c7@gmail.com
+  ~  21/09/22 12:37
+  -->
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".LoginActivity"
+    android:background="@drawable/background_tree"
+    android:backgroundTint="@color/obscurecer"
+    android:backgroundTintMode="src_over"
+    android:theme="@style/test"
+
+    >
 
 
     <androidx.constraintlayout.widget.Guideline
@@ -28,6 +40,7 @@
         app:layout_constraintGuide_percent="0.9" />
 
     <TextView
+        android:textColor="@color/white"
         android:id="@+id/TVCorreo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -37,8 +50,10 @@
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <EditText
+        android:textColor="@color/black"
         android:hint="@string/correo"
         android:layout_margin="@dimen/fab8"
+        android:padding="@dimen/fab8"
         android:id="@+id/ET_correo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -46,9 +61,12 @@
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TVCorreo" />
+        app:layout_constraintTop_toBottomOf="@+id/TVCorreo"
+        android:background="@drawable/rounded_edittext"/>
 
     <TextView
+        android:textColor="@color/white"
+
         android:id="@+id/TVPassword"
         android:layout_margin="@dimen/fab8"
         android:layout_width="wrap_content"
@@ -58,7 +76,9 @@
         app:layout_constraintTop_toBottomOf="@+id/ET_correo" />
 
     <EditText
+        android:textColor="@color/black"
         android:layout_margin="@dimen/fab8"
+        android:padding="@dimen/fab8"
         android:id="@+id/ET_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -67,16 +87,21 @@
         android:hint="@string/contrasena"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TVPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/TVPassword"
+        android:background="@drawable/rounded_edittext"/>
 
     <Button
         android:id="@+id/BtnLogin"
-        android:layout_width="0dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/fab8"
+        android:background="@drawable/rounded_btn"
         android:text="Ingresar"
-        app:layout_constraintBottom_toTopOf="@+id/guideline4"
-        app:layout_constraintEnd_toEndOf="@+id/ET_password"
-        app:layout_constraintStart_toStartOf="@+id/ET_password" />
+        app:layout_constraintBottom_toTopOf="@+id/Btn_loginGoogle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
 
     <TextView
         android:id="@+id/BtnGoRegister"
@@ -88,7 +113,26 @@
         android:text="@string/GotoRegister"
         app:layout_constraintEnd_toEndOf="@+id/BtnLogin"
         app:layout_constraintStart_toStartOf="@+id/BtnLogin"
-        app:layout_constraintTop_toBottomOf="@+id/BtnLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/guideline4"
+        android:textColor="@color/white"
 
+        />
+
+    <Button
+        android:id="@+id/Btn_loginGoogle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/fab8"
+        android:paddingStart="@dimen/fab8"
+        android:text="iniciar sesion con google"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded_btn_white"
+        android:drawableStart="@drawable/googleg_standard_color_18"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="@+id/ET_password"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        android:visibility="gone"
+
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,9 @@
+/*
+ * realizado por palitodev Jose Rios
+ * correo jdrios.c7@gmail.com
+ *  21/09/22 12:37
+ */
+
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
@@ -40,24 +46,40 @@ android {
 dependencies {
 
     implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'androidx.appcompat:appcompat:1.5.0'
+    implementation 'androidx.appcompat:appcompat:1.4.2'
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
+
+    // probemos las nuevas splash screen !!
+    implementation 'androidx.core:core-splashscreen:1.0.0-rc01'
+
+    //imageview circle
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    // empezemos a usar grupie
+    implementation "com.github.lisawray.groupie:groupie:2.10.1"
+
+    //picaso pa foto
+    implementation 'com.squareup.picasso:picasso:2.8'
+
     // Import the Firebase BoM
     implementation platform('com.google.firebase:firebase-bom:30.3.2')
-
-
     //  Add the dependencies for Firebase products you want to use
-    // When using the BoM, don't specify versions in Firebase dependencies
     implementation 'com.google.firebase:firebase-analytics-ktx'
-
-
     // Declare the dependency for the Firebase Authentication library
-    // When using the BoM, you don't specify versions in Firebase library dependencies
     implementation 'com.google.firebase:firebase-auth-ktx'
+    // Dependencia google auth
+    implementation  'com.google.android.gms:play-services-auth:19.2.0'
+    // Declare the dependency for the Cloud Storage library
+    implementation 'com.google.firebase:firebase-storage-ktx'
+    // Declare the dependency for the Realtime Database library
+    implementation 'com.google.firebase:firebase-database-ktx'
+
+    //notificaciones
+    implementation 'com.google.firebase:firebase-messaging:23.0.8'
+
 
 }
